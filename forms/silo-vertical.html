@@ -1,0 +1,80 @@
+<form action="#" onsubmit="volumeSiloVertical()" onreset="clearResultado()">
+    <div class="inferior">
+        <h2>Inferior</h2>
+        <div class="field">
+            <div class="row">
+                <input type="checkbox" id="checkbox-inferior" onchange="disableEnableFields('checkbox-inferior', ['inferior-largura-bocal', 'inferior-largura-bocal-opcao', 'inferior-geratriz'])">
+                <label for="checkbox-inferior">Desabilitar módulo</label>
+            </div>
+        </div>
+        <div class="field">
+            <label for="inferior-largura-bocal">Largura do bocal (cm):</label>
+            <div class="input">
+                <input required id="inferior-largura-bocal" type="number" placeholder="cm">
+                <select name="inferior-largura-bocal-opcao" id="inferior-largura-bocal-opcao">
+                    <option value="raio">Raio</option>
+                    <option value="diametro">Diâmetro</option>
+                    <option value="circunferencia">Circunferência</option>
+                </select>
+            </div>
+        </div>
+        <div class="field">
+            <label for="inferior-geratriz">Geratriz do tronco do cone (cm):</label>
+            <div class="input">
+                <input required id="inferior-geratriz" type="number" placeholder="cm">
+            </div>
+        </div>
+    </div>
+
+    <div class="centro">
+        <h2>Centro</h2>
+        <div class="field">
+            <label for="centro-altura">Altura (cm):</label>
+            <div class="input">
+                <input required id="centro-altura" type="number" placeholder="cm">
+            </div>
+        </div>
+        <div class="field">
+            <label for="centro-largura">Largura (cm):</label>
+            <div class="input">
+                <input id="centro-largura" type="number" placeholder="cm">
+                <select name="centro-largura-opcao" id="centro-largura-opcao">
+                    <option value="raio">Raio</option>
+                    <option value="diametro">Diametro</option>
+                    <option value="circunferencia">Circunferência</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="superior">
+        <h2>Superior</h2>
+        <div class="field">
+            <div class="row">
+                <input type="checkbox" id="checkbox-superior" onchange="disableEnableFields('checkbox-superior', ['superior-largura-bocal', 'superior-largura-bocal-opcao', 'superior-geratriz'])">
+                <label for="checkbox-superior">Desabilitar módulo</label>
+            </div>
+        </div>
+        <div class="field">
+            <label for="superior-largura-bocal">Largura do bocal (cm):</label>
+            <div class="input">
+                <input required id="superior-largura-bocal" type="number" placeholder="cm">
+                <select name="superior-largura-bocal-opcao" id="superior-largura-bocal-opcao">
+                    <option value="raio">Raio</option>
+                    <option value="diametro">Diâmetro</option>
+                    <option value="circunferencia">Circunferência</option>
+                </select>
+            </div>
+        </div>
+        <div class="field">
+            <label for="superior-geratriz">Geratriz do tronco do cone (cm):</label>
+            <div class="input">
+                <input required id="superior-geratriz" type="number" placeholder="cm">
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button type="submit">Calcular</button>
+        <button type="reset">Reiniciar</button>
+    </div>
+</form>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Volume silo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cálculo de volume de silo</h1>
+        Preencha todos os dados abaixo para calcular o volume
+        <h2>Selecione o modelo de silo</h2>
+        <select name="modelo-silo" id="modelo-silo" onchange="changeForm()">
+            <option value="" disabled selected value>Selecione</option>
+            <option value="silo-vertical">Silo vertical</option>
+            <option value="silo-trincheira">Silo trincheira</option>
+            <option value="silo-superficie">Silo superficie</option>
+        </select>
+        <div id="form-selected"></div>
+        <h2 id="resultado"></h2>
+    </div>
+</body>
+
+</html>
